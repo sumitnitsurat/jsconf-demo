@@ -30,7 +30,7 @@
       this._slot.removeEventListener('slotchange', this._onSlotChange);
     }
 
-    _onSlotChange(event) {
+    _onSlotChange(_) {
       // Remove all nodes that are unknown to todo-list
       this.childNodes.forEach(node => {
         if (!(node.nodeType === 1 && node.tagName === 'TODO-ITEM')) {
