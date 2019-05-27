@@ -11,16 +11,15 @@ class ChatMessage extends LitElement {
 
   static get styles() {
     return css`
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       :host {
+        --color: #777;
+        --name-color: #333;
+        --badge-background: #435f7a;
+        --badge-color: #fff;
+
         display: flex;
         font-size: 16px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
 
       .badge {
@@ -30,24 +29,23 @@ class ChatMessage extends LitElement {
         line-height: 2.5em;
         text-align: center;
         border-radius: 50%;
-        background: #435f7a;
+        background: var(--message-badge-background, var(--badge-background));
         vertical-align: middle;
         margin-right: 16px;
-        color: #fff;
+        color: var(--message-badge-color, var(--badge-color));
         text-transform: uppercase;
       }
 
       .message {
-        color: #777;
+        color: var(--message-color, var(--color));
         font-size: 1em;
         margin: 0;
         width: 100%;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
       }
 
       .name {
         font-size: 12px;
-        color: #333;
+        color: var(--message-name-color, var(--name-color));
         text-transform: capitalize;
       }
 

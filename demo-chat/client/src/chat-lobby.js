@@ -4,15 +4,16 @@ class ChatLobby extends LitElement {
 
   static get styles() {
     return css`
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       :host {
+        --background: #2c3e50;
+        --input-color: #fff;
+        --input-placeholder-color: #6D7781;
+        --button-color: #fff;
+        --button-background: #1FCE6D;
+        --button-hover-background: #16aa56;
+
         display: block;
-        background: #2c3e50;
+        background: var(--lobby-background, var(--background));
         height: 100%;
         width: 100%;
       }
@@ -37,28 +38,28 @@ class ChatLobby extends LitElement {
         border: 0;
         border-bottom: 1px solid #f5f5f5;
         outline: none;
-        color: #fff;
+        color: var(--lobby-input-color, var(--input-color));
         font-size: 16px;
       }
 
       ::-webkit-input-placeholder {
-        color: #6D7781;
+        color: var(--lobby-input-placeholder-color, var(--input-placeholder-color));
         font-size: 12px;
       }
 
       button {
-        background: #1FCE6D;
+        background: var(--lobby-button-background, var(--button-background));
         border: 0;
         width: 350px;
         height: 40px;
         border-radius: 3px;
-        color: #fff;
+        color: var(--lobby-button-color, #fff);
         font-size: 12px;
         cursor: pointer;
       }
 
       button:hover {
-        background: #16aa56;
+        background: var(--lobby-button-hover-background, var(--button-hover-background));
       }
     `;
   }

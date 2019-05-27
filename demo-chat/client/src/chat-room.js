@@ -12,16 +12,15 @@ class ChatRoom extends LitElement {
 
   static get styles() {
     return css`
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       :host {
+        --background: #e6eaea;
+        --button-color: #f5f5f5;
+        --button-background: #32465a;
+        --button-hover-background: #192d41;
+
         display: flex;
         flex-direction: column;
-        background: #e6eaea;
+        background: var(--room-background, var(--background));
         height: 100%;
         width: 100%;
       }
@@ -55,11 +54,15 @@ class ChatRoom extends LitElement {
       }
 
       button {
-        color: #f5f5f5;
-        background: #32465a;
+        color: var(--room-button-color, var(--button-color));
+        background: var(--room-button-background, var(--button-background));
         padding: 8px 20px;
         border: none;
         cursor: pointer;
+      }
+
+      button:hover {
+        background: var(--room-button-hover-background, var(--button-hover-background));
       }
     `;
   }
