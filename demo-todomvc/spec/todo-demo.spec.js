@@ -1,8 +1,8 @@
-describe("todo-app", () => {
+describe("todo-demo", () => {
   let todoApp;
 
   beforeEach(() => {
-    const element = document.createElement('todo-app');
+    const element = document.createElement('todo-demo');
     todoApp = document.body.appendChild(element);
   });
 

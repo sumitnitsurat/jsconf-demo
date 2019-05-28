@@ -1,0 +1,59 @@
+:root {
+  --main-color: #282c34;
+  --primary-color: #61dafb;
+  --primary-color-darken-10: #48c1e2;
+  --primary-color-darken-20: #48c1e2;
+  --white-color: #fff;
+}
+
+.App {
+  display: flex;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  flex: 1;
+}
+
+chat-demo {
+  --lobby-background: var(--main-color);
+  --lobby-button-background: var(--primary-color);
+  --lobby-button-hover-background: var(--primary-color-darken-10);
+
+  --room-background: var(--main-color);
+  --room-button-background: var(--primary-color);
+  --room-button-hover-background: var(--primary-color-darken-10);
+
+  --message-badge-background: var(--primary-color);
+  --message-color: var(--white-color);
+  --message-name-color: var(--primary-color-darken-20);
+
+  flex: 1;
+  height: 100vh;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

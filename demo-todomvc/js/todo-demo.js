@@ -5,7 +5,7 @@
       <h1>todos</h1>
       <input class="new-todo" placeholder="What needs to be done?" autofocus>
     </header>
-    
+
     <!-- This section should be hidden by default and shown when there are todos -->
     <section class="main hidden">
       <input id="toggle-all" class="toggle-all" type="checkbox">
@@ -20,7 +20,7 @@
     </footer>
   `;
 
-  class TodoApp extends HTMLElement {
+  class TodoDemo extends HTMLElement {
 
     constructor() {
       super();
@@ -42,7 +42,7 @@
       this._newTodoInput.addEventListener('keyup', this._onNewTodoKeyup);
       this._todoList.addEventListener('todolist-change', this._onTodoListChange);
     }
-    
+
     disconnectedCallback() {
       this._newTodoInput.removeEventListener('keyup', this._onNewTodoKeyup);
       this._todoList.removeEventListener('todolist-change', this._onTodoListChange);
@@ -77,5 +77,5 @@
 
   }
 
-  customElements.define('todo-app', TodoApp);
+  customElements.define('todo-demo', TodoDemo);
 })();

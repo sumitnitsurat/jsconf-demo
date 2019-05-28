@@ -13,12 +13,6 @@ class ChatDemo extends LitElement {
 
   static get styles() {
     return css`
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       :host {
         display: block;
         height: 100%;
