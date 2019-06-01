@@ -1,0 +1,19 @@
+{
+  "name": "todo-demo",
+  "version": "1.0.0",
+  "description": "Vanilla JS Todo Demo based on [TodoMVC](http://todomvc.com)",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-core": "^3.4.0",
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5"
+  }
+}
