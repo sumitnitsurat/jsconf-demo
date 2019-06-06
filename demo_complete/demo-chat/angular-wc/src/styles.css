@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #1976d2;
+  --primary-color: #e23237;
+  --primary-color-darken-10: #c9191e;
+  --white-color: #fff;
+  --grey-color: #ccc;
+  --grey-color-darken-10: #b3b3b3;
+}
